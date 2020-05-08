@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pizza</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="wrapper">
+        <div class="navigation">
+          <img src="image/logo.png" alt="pizza">
+          <ul class="nav">
+            <li><a href="">newsletter</a></li>
+            <li><a href="">community</a></li>
+            <li><a href="">shop</a></li>
+            <li><a href="">contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="wrapper">
+        <h1 class="title">Create Your Own Pizza</h1>
+        <p class="description">
+          Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been
+          the industry's standard dummy since the 1500s.
+        </p>
+        <a class="btn" href="">Read more</a>
+        <img class="pizza" src="image/pizza.png" alt="Pizza">
+      </div>
+    </div>
+    <div class="page">
+      <div class="wrapper">
+        <div class="center">
+          <h2 class="h2">
+            How to progress?
+          </h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </p>
+        </div>
+        <ul class="menu">
+          <!-- <li><a class="menu-link active" href="#">Pizza cartoon</a></li> -->
+          <li><a class="menu-link" href="#">Pizza cartoon</a></li>
+          <li><a class="menu-link" href="#">Burger</a></li>
+          <li><a class="menu-link" href="#">Sandwich</a></li>
+          <li><a class="menu-link" href="#">Loremispsum</a></li>
+        </ul>
+
+        <div class="box">
+          <div class="box-item">
+            <p class="number number-one">1</p>
+            <div class="box-text">
+              <h3>Create it</h3>
+              <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+            </div>
+          </div>
+          <div class="box-item">
+            <p class="number number-two">2</p>
+            <div class="box-text">
+              <h3>Name it</h3>
+              <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+            </div>
+          </div>
+          <div class="box-item">
+            <p class="number number-three">3</p>
+            <div class="box-text">
+              <h3>Fame it</h3>
+              <p>Choose from a selection of tastilicious toppings to create your own pizza</p>
+            </div>
+          </div>
+        </div>
+        <p class="center">
+          <a class="btn-start" href="#">Create your legend</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrapper">
+        <p>&copy; 2020 Graphic Resources. All rights reserved. </p>
+      </div>
+    </div>
+    <script type="text/javascript">
+      const links = document.getElementsByTagName('a');
+      for (linkItem of links) {
+        linkItem.addEventListener('click', (event) => {
+          event.preventDefault();
+          // alert('Eue!');
+        })
+      }
+
+      // Применение css-класса 'active' к ссылке в класса 'menu-link'
+      // const menuLinks = document.getElementsByClassName('menu-link');
+      // console.log(menuLinks);
+      // for (menuLink of menuLinks) {
+      //   menuLink.addEventListener('click', (event) => {
+      //     for (menuLink of menuLinks) {
+      //       menuLink.classList.remove('active');
+      //     }
+      //     event.preventDefault();
+      //     console.log(event.target);
+      //     event.target.classList.toggle('active');
+      //   });
+      // }
+
+      // Применение css-класса 'active' к ссылке в меню класса 'menu'
+      // при делегировании события цели внутри выбранного селектора
+      // тега 'a' в селекторе 'ul.menu'
+      // const menu = document.querySelector('ul.menu');
+      // const menuLinks = menu.getElementsByTagName('a');
+      // console.log(menu);
+      // menu.addEventListener('click', event => {
+      //   for (menuLink of menuLinks) {
+      //     menuLink.classList.remove('active');
+      //   }
+      //   console.log(event.target);
+      //   event.target.classList.toggle('active');
+      // });
+
+    </script>
+  </body>
+</html>
